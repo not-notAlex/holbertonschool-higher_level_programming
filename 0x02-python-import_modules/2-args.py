@@ -6,6 +6,8 @@ if __name__ == '__main__':
     d = 1
     if num == 1:
         print("0 arguments.")
+    elif num == 2:
+        print("1 argument:\n1: {:s}".format(argv[1]))
     else:
         print("{:d} arguments:".format(num - 1))
         while d < num:
