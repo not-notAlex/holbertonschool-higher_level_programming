@@ -6,7 +6,7 @@ int is_palindrome(listint_t **head)
 	int length = 0, i, j = 0;
 
 	ptr1 = *head;
-	while(ptr1)
+	while (ptr1)
 	{
 		length++;
 		ptr1 = ptr1->next;
@@ -16,7 +16,7 @@ int is_palindrome(listint_t **head)
 	{
 		j = 0;
 		ptr2 = *head;
-		while(j < (length - i - 1))
+		while (j < (length - i - 1))
 		{
 			j++;
 			ptr2 = ptr2->next;
