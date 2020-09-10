@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
+    total = 0
     if not isinstance(roman_string, str):
-        return None
+        return 0
     elif roman_string:
         rom = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-        total = 0
         for i in range(0, len(roman_string)):
             if roman_string[i] in list(rom.keys()):
                 total += rom[roman_string[i]]
@@ -21,4 +21,4 @@ def roman_to_int(roman_string):
                     total -= 200
                 if roman_string[i] == 'C' and roman_string[i + 1] == 'M':
                     total -= 200
-        return total
+    return total
