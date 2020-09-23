@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 module 0-square
-Defines empty class Square
+Defines class Square
 """
 
 class Square:
