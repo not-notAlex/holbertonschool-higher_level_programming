@@ -41,3 +41,23 @@ fail cases:
      >>> bg.area()
      Traceback (most recent call last):
      Exception: area() is not implemented
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("Hello", (0, 1))
+     Traceback (most recent call last):
+     ...
+     TypeError: Hello must be an integer
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("Hello", [1, 2, 3])
+     Traceback (most recent call last):
+     ...
+     TypeError: Hello must be an integer
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("Hello", True)
+     Traceback (most recent call last):
+     ...
+     TypeError: Hello must be an integer
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("Hello", None)
+     Traceback (most recent call last):
+     ...
+     TypeError: Hello must be an integer
