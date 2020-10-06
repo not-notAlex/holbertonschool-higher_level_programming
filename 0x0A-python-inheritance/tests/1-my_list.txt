@@ -25,3 +25,12 @@ safe cases:
      >>> some_list.append(98)
      >>> some_list.print_sorted()
      [98]
+
+     >>> type(MyList())
+     <class '1-my_list.MyList'>
+
+     >>> isinstance(MyList, list)
+     False
+
+     >>> issubclass(MyList, list)
+     True
