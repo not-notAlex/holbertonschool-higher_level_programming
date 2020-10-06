@@ -3,8 +3,9 @@
 module for 0-lookup.py
 """
 
+
 def lookup(obj):
     """
     prints attributes and methods of an object
     """
-    return list(obj.__dict__)
+    return dir(obj)
