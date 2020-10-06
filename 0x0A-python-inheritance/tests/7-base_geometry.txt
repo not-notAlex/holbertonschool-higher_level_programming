@@ -61,3 +61,8 @@ fail cases:
      Traceback (most recent call last):
      ...
      TypeError: Hello must be an integer
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("Hello", {98, 1337})
+     Traceback (most recent call last):
+     ...
+     TypeError: Hello must be an integer
