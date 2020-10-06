@@ -7,7 +7,6 @@ module for 11-square.py
 Rectangle = __import__('9-rectangle').Rectangle
 
 
-
 class Square(Rectangle):
     """
     a geometric square
