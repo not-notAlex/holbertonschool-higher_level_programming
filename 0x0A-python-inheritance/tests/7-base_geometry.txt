@@ -27,3 +27,13 @@ fail cases:
      Traceback (most recent call last):
      ...
      TypeError: integer_validator() takes 3 positional arguments but 4 were given
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("sides", 0)
+     Traceback (most recent call last):
+     ...
+     ValueError: sides must be greater than 0
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("uhoh", -98)
+     Traceback (most recent call last):
+     ...
+     ValueError: uhoh must be greater than 0
