@@ -59,7 +59,10 @@ class Base():
         """
         returns an instance with attributes set
         """
-        new_clone = cls(1, 1)
+        if cls.__name__ = "Square":
+            new_clone = cls(1)
+        else:
+            new_clone = cls(1, 1)
         new_clone.update(**dictionary)
         return new_clone
 
