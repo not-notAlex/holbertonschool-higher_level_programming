@@ -14,6 +14,9 @@ if __name__ == "__main__":
                       .format(argv[1], argv[2], argv[3]), pool_pre_ping=True)
     Session = sessionmaker(bind=e)
     ses = Session()
-    i = ses.query(State).order_by(State.id)
-    print("{}: {}".format(i[0].id, i[0].name))
+    result = ses.query(State).order_by(State.id).first()
+    if result:
+        print("{}: {}".format(result.id, result.name))
+    else:
+        print("Nothing")
     ses.close()
