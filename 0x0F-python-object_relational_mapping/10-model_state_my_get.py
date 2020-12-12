@@ -24,6 +24,4 @@ if __name__ == "__main__":
             found = 1
     if found == 0:
         print("Not found")
-    else:
-        print(found)
     ses.close()
