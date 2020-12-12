@@ -15,10 +15,15 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=e)
     ses = Session()
     found = 0
+    st = argv[4]
+    if len(argv) == 6:
+        st = st + " " + argv[5]
     for i in ses.query(State).order_by(State.id):
-        if i.name == argv[4]:
-            print("{}: {}".format(i.id, i.name))
+        if i.name == st:
+            print(i.id)
             found = 1
     if found == 0:
         print("Not found")
+    else:
+        print(found)
     ses.close()
