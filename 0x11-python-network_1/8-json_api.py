@@ -7,7 +7,7 @@ from sys import argv
 import requests
 
 if __name__ == "__main__":
-    if len(argv) != 1:
+    if len(argv) < 2:
         l = ""
     else:
         l = argv[1]
