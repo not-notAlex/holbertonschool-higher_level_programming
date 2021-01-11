@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-module for task 8 
+module for task 8
 """
 
 from sys import argv
