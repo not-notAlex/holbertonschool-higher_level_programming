@@ -12,7 +12,7 @@ if __name__ == "__main__":
     else:
         l = argv[1]
     url = 'http://0.0.0.0:5000/search_user'
-    r = requests.post(url, data={'q': letter})
+    r = requests.post(url, data={'q': l})
     try:
         new_dict = r.json()
         if new_dict:
